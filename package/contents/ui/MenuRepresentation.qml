@@ -41,7 +41,7 @@ import QtQuick.Controls 2.12
 Item{
 
     id: main
-    property int sizeImage: units.iconSizes.large * 2
+    property int sizeImage: units.iconSizes.huge * 2
 
     onVisibleChanged: {
         root.visible = !root.visible
@@ -56,7 +56,7 @@ Item{
         location: PlasmaCore.Types.Floating
         hideOnWindowDeactivate: true
 
-        property int iconSize: units.iconSizes.large
+        property int iconSize: units.iconSizes.huge
         property int cellSize: iconSize
                                + units.gridUnit * 2
                                + (2 * Math.max(highlightItemSvg.margins.top + highlightItemSvg.margins.bottom,
@@ -261,12 +261,12 @@ Item{
                 }
 
                 PlasmaComponents3.ToolButton {
-                    icon.name:  "configure"
-                    onClicked: logic.openUrl("file:///usr/share/applications/systemsettings.desktop")
+                    icon.name:  "system-upgrade"
+                    onClicked: executable.exec("konsole --noclose -e 'yay -Syu'")
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
                     ToolTip.visible: hovered
-                    ToolTip.text: i18n("System Preferences")
+                    ToolTip.text: "System Update"
                 }
 
                 Item{
@@ -274,31 +274,30 @@ Item{
                 }
 
                 PlasmaComponents3.ToolButton {
-                    icon.name:  "user-home"
-                    onClicked: logic.openUrl("file:///usr/share/applications/org.kde.dolphin.desktop")
+                    icon.name:   "system-log-out"
+                    onClicked: executable.exec("qdbus org.kde.ksmserver /KSMServer logout 0 0 1")
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
                     ToolTip.visible: hovered
-                    ToolTip.text: i18n("User Home")
+                    ToolTip.text: "Log out"
                 }
 
                 PlasmaComponents3.ToolButton {
-                    icon.name:  "system-lock-screen"
-                    onClicked: pmEngine.performOperation("lockScreen")
-                    enabled: pmEngine.data["Sleep States"]["LockScreen"]
+                    icon.name:   "system-reboot"
+                    onClicked: executable.exec("systemctl reboot")
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
                     ToolTip.visible: hovered
-                    ToolTip.text: i18nc("@action", "Lock Screen")
+                    ToolTip.text: "Reboot"
                 }
 
                 PlasmaComponents3.ToolButton {
                     icon.name:   "system-shutdown"
-                    onClicked: pmEngine.performOperation("requestShutDown")
+                    onClicked: executable.exec("shutdown now")
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
                     ToolTip.visible: hovered
-                    ToolTip.text: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Leave ... ")
+                    ToolTip.text: "Shutdown"
                 }
             }
 
@@ -310,7 +309,7 @@ Item{
                 }
                 level: 1
                 color: theme.textColor
-                text: i18n("Hi, ")+ kuser.fullName
+                text: kuser.fullName
                 font.bold: true
                 visible: plasmoid.configuration.viewUser
             }

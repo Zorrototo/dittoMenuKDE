@@ -13,7 +13,7 @@
       <choice name="Center" />
       <choice name="CenterBottom" />
     </choices>
-    <default>Center</default>
+    <default>Default</default>
     </entry>
 
     <entry name="icon" type="String">
@@ -42,7 +42,7 @@
     </entry>
 
     <entry name="numberRows" type="Int">
-    <default>4</default>
+    <default>5</default>
     </entry>
 
     <entry name="favoriteApps" type="StringList">
@@ -79,7 +79,7 @@
        <default>true</default>
    </entry>   
     <entry name="showFavoritesFirst" type="Bool">
-       <default>false</default>
+       <default>true</default>
    </entry>
     <entry name="favoritesPortedToKAstats" type="Bool">
       <label>Are the favorites ported to use KActivitiesStats to allow per-activity favorites</label>
