@@ -87,7 +87,7 @@
     </entry>
 
     <entry name="viewUser" type="Bool">
-    <default>true</default>
+    <default>false</default>
     </entry>
   </group>
 </kcfg>
