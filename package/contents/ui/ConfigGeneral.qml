@@ -176,7 +176,6 @@ Item {
 
                     ComboBox {
                         id: appNameFormat
-
                         Layout.fillWidth: true
 
                         model: [i18n("Name only"), i18n("Description only"), i18n("Name (Description)"), i18n("Description (Name)")]

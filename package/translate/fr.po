@@ -61,7 +61,7 @@ msgstr "Choisir..."
 #: ../contents/ui/ConfigGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Clear Icon"
-msgstr "Netoyer l'icône"
+msgstr "Supprimer l'icône"
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Behavior"
