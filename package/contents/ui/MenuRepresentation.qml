@@ -283,6 +283,15 @@ Item{
                 }
 
                 PlasmaComponents3.ToolButton {
+                    icon.name:   "system-suspend"
+                    onClicked: executable.exec("systemctl suspend")
+                    ToolTip.delay: 200
+                    ToolTip.timeout: 1000
+                    ToolTip.visible: hovered
+                    ToolTip.text: "Sleep"
+                }
+
+                PlasmaComponents3.ToolButton {
                     icon.name:   "system-reboot"
                     onClicked: executable.exec("systemctl reboot")
                     ToolTip.delay: 200
