@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dittomenu\n"
 "Report-Msgid-Bugs-To: https://store.kde.org/p/1312669/\n"
-"POT-Creation-Date: 2022-11-10 07:02-0300\n"
+"POT-Creation-Date: 2023-03-09 16:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,35 +143,54 @@ msgstr ""
 msgid "Unhidden!"
 msgstr ""
 
-#: ../contents/ui/main.qml
-msgid "Edit Applications..."
-msgstr "Editar Programa"
+#: ../contents/ui/MenuRepresentation.qml
+msgid "System Update"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "System Preferences"
-msgstr "Configurações do Sistema"
+msgid "Log out"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "User Home"
-msgstr "Diretório do Usuário"
+msgid "Sleep"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgctxt "@action"
-msgid "Lock Screen"
-msgstr "Bloquear Tela"
+msgid "Reboot"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "Hi, "
-msgstr "Olá, "
+msgid "Shutdown"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
 msgid "Type here to search ..."
 msgstr "Digite aqui para pesquisar"
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "Favorits"
-msgstr "Favoritos"
+msgid "Favorites"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
 msgid "All apps"
 msgstr "Todos os programas"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications..."
+msgstr "Editar Programa"
+
+#~ msgid "System Preferences"
+#~ msgstr "Configurações do Sistema"
+
+#~ msgid "User Home"
+#~ msgstr "Diretório do Usuário"
+
+#~ msgctxt "@action"
+#~ msgid "Lock Screen"
+#~ msgstr "Bloquear Tela"
+
+#~ msgid "Hi, "
+#~ msgstr "Olá, "
+
+#~ msgid "Favorits"
+#~ msgstr "Favoritos"

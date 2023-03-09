@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dittomenu\n"
 "Report-Msgid-Bugs-To: https://store.kde.org/p/1312669/\n"
-"POT-Creation-Date: 2022-04-21 22:12-0300\n"
+"POT-Creation-Date: 2023-03-09 16:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,26 +146,25 @@ msgstr "Tüm gizli uygulamaları göster"
 msgid "Unhidden!"
 msgstr "Gizli!"
 
-#: ../contents/ui/main.qml
-msgid "Edit Applications..."
-msgstr "Uygulamaları Düzenle..."
+#: ../contents/ui/MenuRepresentation.qml
+msgid "System Update"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "System Preferences"
-msgstr "Sistem Tercihleri"
+msgid "Log out"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "User Home"
-msgstr "Kullanıcı Ana Sayfası"
+msgid "Sleep"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgctxt "@action"
-msgid "Lock Screen"
-msgstr "Kilit Ekranı"
+msgid "Reboot"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "Hi, "
-msgstr "Merhaba, "
+msgid "Shutdown"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
 msgid "Type here to search ..."
@@ -178,3 +177,20 @@ msgstr ""
 #: ../contents/ui/MenuRepresentation.qml
 msgid "All apps"
 msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications..."
+msgstr "Uygulamaları Düzenle..."
+
+#~ msgid "System Preferences"
+#~ msgstr "Sistem Tercihleri"
+
+#~ msgid "User Home"
+#~ msgstr "Kullanıcı Ana Sayfası"
+
+#~ msgctxt "@action"
+#~ msgid "Lock Screen"
+#~ msgstr "Kilit Ekranı"
+
+#~ msgid "Hi, "
+#~ msgstr "Merhaba, "

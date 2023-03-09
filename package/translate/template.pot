@@ -1,5 +1,5 @@
 # Translation of dittomenu in LANGUAGE
-# Copyright (C) 2022
+# Copyright (C) 2023
 # This file is distributed under the same license as the dittomenu package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dittomenu\n"
 "Report-Msgid-Bugs-To: https://store.kde.org/p/1312669/\n"
-"POT-Creation-Date: 2022-04-21 22:12-0300\n"
+"POT-Creation-Date: 2023-03-09 16:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,25 +143,24 @@ msgstr ""
 msgid "Unhidden!"
 msgstr ""
 
-#: ../contents/ui/main.qml
-msgid "Edit Applications..."
+#: ../contents/ui/MenuRepresentation.qml
+msgid "System Update"
 msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "System Preferences"
+msgid "Log out"
 msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "User Home"
+msgid "Sleep"
 msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgctxt "@action"
-msgid "Lock Screen"
+msgid "Reboot"
 msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "Hi, "
+msgid "Shutdown"
 msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
@@ -174,4 +173,8 @@ msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
 msgid "All apps"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications..."
 msgstr ""

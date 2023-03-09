@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dittomenu\n"
 "Report-Msgid-Bugs-To: https://store.kde.org/p/1312669/\n"
-"POT-Creation-Date: 2022-04-21 22:12-0300\n"
+"POT-Creation-Date: 2023-03-09 16:58+0100\n"
 "PO-Revision-Date: 2022-01-01 20:09+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
@@ -144,25 +144,24 @@ msgstr "Alle verborgen programma's zichtbaar maken"
 msgid "Unhidden!"
 msgstr "Alles programma's zijn weer zichtbaar!"
 
-#: ../contents/ui/main.qml
-msgid "Edit Applications..."
-msgstr "Programma's bewerken…"
-
 #: ../contents/ui/MenuRepresentation.qml
-msgid "System Preferences"
-msgstr "Systeeminstellingen"
-
-#: ../contents/ui/MenuRepresentation.qml
-msgid "User Home"
+msgid "System Update"
 msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgctxt "@action"
-msgid "Lock Screen"
-msgstr "Scherm vergrendelen"
+msgid "Log out"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "Hi, "
+msgid "Sleep"
+msgstr ""
+
+#: ../contents/ui/MenuRepresentation.qml
+msgid "Reboot"
+msgstr ""
+
+#: ../contents/ui/MenuRepresentation.qml
+msgid "Shutdown"
 msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
@@ -176,6 +175,17 @@ msgstr ""
 #: ../contents/ui/MenuRepresentation.qml
 msgid "All apps"
 msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications..."
+msgstr "Programma's bewerken…"
+
+#~ msgid "System Preferences"
+#~ msgstr "Systeeminstellingen"
+
+#~ msgctxt "@action"
+#~ msgid "Lock Screen"
+#~ msgstr "Scherm vergrendelen"
 
 #~ msgid "Search ..."
 #~ msgstr "Zoeken…"

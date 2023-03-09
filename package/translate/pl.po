@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dittomenu\n"
 "Report-Msgid-Bugs-To: https://store.kde.org/p/1312669/\n"
-"POT-Creation-Date: 2022-04-21 22:12-0300\n"
+"POT-Creation-Date: 2023-03-09 16:58+0100\n"
 "PO-Revision-Date: 2022-04-05 10:40+0100\n"
 "Last-Translator: Krzysztof Korab <korapps@outlook.com>\n"
 "Language-Team: \n"
@@ -143,26 +143,25 @@ msgstr "Uwidocznij wszystkie ukryte aplikacje"
 msgid "Unhidden!"
 msgstr "Wszystkie programy są widoczne!"
 
-#: ../contents/ui/main.qml
-msgid "Edit Applications..."
-msgstr "Edytuj programy..."
+#: ../contents/ui/MenuRepresentation.qml
+msgid "System Update"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "System Preferences"
-msgstr "Ustawienia systemowe"
+msgid "Log out"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "User Home"
-msgstr "Katalog domowy"
+msgid "Sleep"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgctxt "@action"
-msgid "Lock Screen"
-msgstr "Zablokuj ekran"
+msgid "Reboot"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
-msgid "Hi, "
-msgstr "Cześć, "
+msgid "Shutdown"
+msgstr ""
 
 #: ../contents/ui/MenuRepresentation.qml
 msgid "Type here to search ..."
@@ -175,3 +174,20 @@ msgstr ""
 #: ../contents/ui/MenuRepresentation.qml
 msgid "All apps"
 msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications..."
+msgstr "Edytuj programy..."
+
+#~ msgid "System Preferences"
+#~ msgstr "Ustawienia systemowe"
+
+#~ msgid "User Home"
+#~ msgstr "Katalog domowy"
+
+#~ msgctxt "@action"
+#~ msgid "Lock Screen"
+#~ msgstr "Zablokuj ekran"
+
+#~ msgid "Hi, "
+#~ msgstr "Cześć, "

@@ -266,7 +266,7 @@ Item{
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
                     ToolTip.visible: hovered
-                    ToolTip.text: "System Update"
+                    ToolTip.text: i18n("System Update")
                 }
 
                 Item{
@@ -279,7 +279,7 @@ Item{
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
                     ToolTip.visible: hovered
-                    ToolTip.text: "Log out"
+                    ToolTip.text: i18n("Log out")
                 }
 
                 PlasmaComponents3.ToolButton {
@@ -288,7 +288,7 @@ Item{
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
                     ToolTip.visible: hovered
-                    ToolTip.text: "Sleep"
+                    ToolTip.text: i18n("Sleep")
                 }
 
                 PlasmaComponents3.ToolButton {
@@ -297,7 +297,7 @@ Item{
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
                     ToolTip.visible: hovered
-                    ToolTip.text: "Reboot"
+                    ToolTip.text: i18n("Reboot")
                 }
 
                 PlasmaComponents3.ToolButton {
@@ -306,7 +306,7 @@ Item{
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
                     ToolTip.visible: hovered
-                    ToolTip.text: "Shutdown"
+                    ToolTip.text: i18n("Shutdown")
                 }
             }
 
