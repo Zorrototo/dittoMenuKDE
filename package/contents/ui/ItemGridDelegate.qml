@@ -82,7 +82,8 @@ Item {
                 topMargin: units.smallSpacing
                 horizontalCenter: parent.horizontalCenter
             }
-            maximumLineCount: plasmoid.configuration.labels2lines ? 2 : 1
+            //maximumLineCount: plasmoid.configuration.labels2lines ? 2 : 1 // original
+            maximumLineCount: plasmoid.configuration.labels2lines ? 2 : 2 // force two lines
             horizontalAlignment: Text.AlignHCenter
             width: parent.width - units.largeSpacing
             height: units.gridUnit * 2
