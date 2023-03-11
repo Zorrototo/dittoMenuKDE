@@ -20,3 +20,16 @@ Have fun ;)
 ## Translating
 
 See the [package/translate](package/translate) folder for instructions on translating.
+
+
+## Modifications done for my preferences and own use on Manjaro
+
+- changed some default settings (favorites is the default panel, user and avatar now hidden, default position on bottom left)
+- forced labels to be on two lines (the `labels2lines` parameter doesn't seem to work)
+- added and modified action buttons to update the system, log out, sleep, reboot, shutdown
+- increased icons size
+- added French translation and updated other with new modifications
+
+![Screenshot_20230311_184155](https://user-images.githubusercontent.com/17416415/224503592-1aa96f78-b0f3-46c0-af1b-110a74adbd74.png)
+
+
