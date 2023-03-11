@@ -46,7 +46,7 @@
     </entry>
 
     <entry name="favoriteApps" type="StringList">
-      <default>preferred://systemsettings.desktop</default>
+      <default>systemsettings.desktop</default>
     </entry>
     <entry name="favoriteSystemActions" type="StringList">
       <default>logout,suspend,reboot,shutdown</default>
