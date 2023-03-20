@@ -247,7 +247,7 @@ Item{
                 x: - backgroundSvg.margins.left
                 imagePath: "widgets/plasmoidheading"
                 prefix: "footer"
-                opacity: 0.7
+                opacity: 0
             }
 
             RowLayout{
