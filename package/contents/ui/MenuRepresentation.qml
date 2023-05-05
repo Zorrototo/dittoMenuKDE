@@ -35,13 +35,12 @@ import org.kde.kwindowsystem 1.0
 import QtGraphicalEffects 1.0
 import org.kde.kquickcontrolsaddons 2.0
 import org.kde.plasma.private.quicklaunch 1.0
-
 import QtQuick.Controls 2.12
 
 Item{
 
     id: main
-    property int sizeImage: units.iconSizes.huge * 2
+    property int sizeImage: PlasmaCore.Units.iconSizes.huge * 2
 
     onVisibleChanged: {
         root.visible = !root.visible
@@ -56,9 +55,9 @@ Item{
         location: PlasmaCore.Types.Floating
         hideOnWindowDeactivate: true
 
-        property int iconSize: units.iconSizes.huge
+        property int iconSize: PlasmaCore.Units.iconSizes.huge
         property int cellSize: iconSize
-                               + units.gridUnit * 2
+                               + PlasmaCore.Units.gridUnit * 2
                                + (2 * Math.max(highlightItemSvg.margins.top + highlightItemSvg.margins.bottom,
                                                highlightItemSvg.margins.left + highlightItemSvg.margins.right))
         property bool searching: (searchField.text != "")
@@ -66,7 +65,7 @@ Item{
         property bool showFavorites
 
         onVisibleChanged: {
-            reset();
+
             if (visible) {
                 root.showFavorites = plasmoid.configuration.showFavoritesFirst
                 var pos = popupPosition(width, height);
@@ -99,8 +98,6 @@ Item{
 
         function reset() {
             searchField.text = "";
-            globalFavoritesGrid.model = globalFavorites
-            allAppsGrid.model = rootModel.modelForRow(0);
 
             if(showFavorites)
                 globalFavoritesGrid.tryActivate(0,0)
@@ -120,7 +117,7 @@ Item{
                                  screenAvail.height);
 
 
-            var offset = units.smallSpacing
+            var offset = PlasmaCore.Units.smallSpacing
 
             // Fall back to bottom-left of screen area when the applet is on the desktop or floating.
             var x = offset;
@@ -170,10 +167,10 @@ Item{
         FocusScope {
 
             id: rootItem
-            Layout.minimumWidth:  (root.cellSize *  plasmoid.configuration.numberColumns)+ units.largeSpacing
-            Layout.maximumWidth:  (root.cellSize *  plasmoid.configuration.numberColumns)+ units.largeSpacing
-            Layout.minimumHeight: (root.cellSize *  plasmoid.configuration.numberRows) + searchField.implicitHeight + (plasmoid.configuration.viewUser ? main.sizeImage*0.5 : units.largeSpacing * 1.5 ) +  units.largeSpacing * 6
-            Layout.maximumHeight: (root.cellSize *  plasmoid.configuration.numberRows) + searchField.implicitHeight + (plasmoid.configuration.viewUser ? main.sizeImage*0.5 : units.largeSpacing * 1.5 ) +  units.largeSpacing * 6
+            Layout.minimumWidth:  (root.cellSize *  plasmoid.configuration.numberColumns)+ PlasmaCore.Units.largeSpacing
+            Layout.maximumWidth:  (root.cellSize *  plasmoid.configuration.numberColumns)+ PlasmaCore.Units.largeSpacing
+            Layout.minimumHeight: (root.cellSize *  plasmoid.configuration.numberRows) + searchField.implicitHeight + (plasmoid.configuration.viewUser ? main.sizeImage*0.5 : PlasmaCore.Units.largeSpacing * 1.5 ) +  PlasmaCore.Units.largeSpacing * 6
+            Layout.maximumHeight: (root.cellSize *  plasmoid.configuration.numberRows) + searchField.implicitHeight + (plasmoid.configuration.viewUser ? main.sizeImage*0.5 : PlasmaCore.Units.largeSpacing * 1.5 ) +  PlasmaCore.Units.largeSpacing * 6
 
 
             focus: true
@@ -242,8 +239,8 @@ Item{
             PlasmaCore.FrameSvgItem {
                 id : headingSvg
                 width: parent.width + backgroundSvg.margins.right + backgroundSvg.margins.left
-                height:  root.cellSize * plasmoid.configuration.numberRows  + units.largeSpacing * 2 + backgroundSvg.margins.bottom - 1 //<>+ paginationBar.height
-                y: globalFavoritesGrid.y - units.largeSpacing
+                height:  root.cellSize * plasmoid.configuration.numberRows  + PlasmaCore.Units.largeSpacing * 2 + backgroundSvg.margins.bottom - 1 //<>+ paginationBar.height
+                y: globalFavoritesGrid.y - PlasmaCore.Units.largeSpacing
                 x: - backgroundSvg.margins.left
                 imagePath: "widgets/plasmoidheading"
                 prefix: "footer"
@@ -256,8 +253,8 @@ Item{
                     left: parent.left
                     right: parent.right
                     top: parent.top
-                    margins: units.smallSpacing
-                    topMargin: units.largeSpacing / 2
+                    margins: PlasmaCore.Units.smallSpacing
+                    topMargin: PlasmaCore.Units.largeSpacing / 2
                 }
 
                 PlasmaComponents3.ToolButton {
@@ -274,7 +271,7 @@ Item{
                 }
 
                 PlasmaComponents3.ToolButton {
-                    icon.name:   "system-log-out"
+                    icon.name:  "system-log-out"
                     onClicked: executable.exec("qdbus org.kde.ksmserver /KSMServer logout 0 0 1")
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
@@ -283,7 +280,7 @@ Item{
                 }
 
                 PlasmaComponents3.ToolButton {
-                    icon.name:   "system-suspend"
+                    icon.name:  "system-suspend"
                     onClicked: executable.exec("systemctl suspend")
                     ToolTip.delay: 200
                     ToolTip.timeout: 1000
@@ -313,7 +310,7 @@ Item{
             PlasmaExtras.Heading {
                 anchors {
                     top: rowTop.bottom
-                    topMargin: units.largeSpacing
+                    topMargin: PlasmaCore.Units.largeSpacing
                     horizontalCenter: parent.horizontalCenter
                 }
                 level: 1
@@ -327,10 +324,10 @@ Item{
                 id: rowSearchField
                 anchors{
                     top: plasmoid.configuration.viewUser ? parent.top : rowTop.bottom
-                    topMargin: plasmoid.configuration.viewUser ? units.largeSpacing*3  + sizeImage/2 : units.largeSpacing/2
+                    topMargin: plasmoid.configuration.viewUser ? PlasmaCore.Units.largeSpacing*3  + sizeImage/2 : PlasmaCore.Units.largeSpacing/2
                     left: parent.left
                     right: parent.right
-                    margins: units.smallSpacing
+                    margins: PlasmaCore.Units.smallSpacing
                 }
 
                 Item{
@@ -340,7 +337,7 @@ Item{
                     id: searchField
                     Layout.fillWidth: true
                     placeholderText: i18n("Type here to search ...")
-                    leftPadding: units.largeSpacing + units.iconSizes.small
+                    leftPadding: PlasmaCore.Units.largeSpacing + PlasmaCore.Units.iconSizes.small
                     text: ""
                     //clearButtonShown: true  // TODO: kubuntu 20.04
                     onTextChanged: {
@@ -348,7 +345,16 @@ Item{
                     }
 
                     Keys.onPressed: {
-                        if (event.key == Qt.Key_Down || event.key == Qt.Key_Tab || event.key == Qt.Key_Backtab) {
+                        if (event.key === Qt.Key_Escape) {
+                            event.accepted = true;
+                            if(root.searching){
+                                searchField.clear()
+                            } else {
+                                root.toggle()
+                            }
+                        }
+
+                        if (event.key === Qt.Key_Down || event.key === Qt.Key_Tab || event.key === Qt.Key_Backtab) {
                             event.accepted = true;
                             if(root.showFavorites)
                                 globalFavoritesGrid.tryActivate(0,0)
@@ -377,10 +383,10 @@ Item{
                         anchors {
                             left: searchField.left
                             verticalCenter: searchField.verticalCenter
-                            leftMargin: units.smallSpacing * 2
+                            leftMargin: PlasmaCore.Units.smallSpacing * 2
 
                         }
-                        height: units.iconSizes.small
+                        height: PlasmaCore.Units.iconSizes.small
                         width: height
                     }
 
@@ -430,24 +436,28 @@ Item{
                 visible: (plasmoid.configuration.showFavoritesFirst || root.showFavorites ) && !root.searching && root.showFavorites
                 anchors {
                     top: rowSearchField.bottom
-                    topMargin: units.largeSpacing * 2
+                    topMargin: PlasmaCore.Units.largeSpacing * 2
                     left: parent.left
                     right: parent.right
                 }
 
-                width:  root.cellSize *  plasmoid.configuration.numberColumns + units.largeSpacing
+                width:  root.cellSize *  plasmoid.configuration.numberColumns + PlasmaCore.Units.largeSpacing
                 height: root.cellSize * plasmoid.configuration.numberRows
                 focus: true
                 cellWidth:   root.cellSize
                 cellHeight:  root.cellSize
-                iconSize:    root.iconSize                
+                iconSize:    root.iconSize
                 dragEnabled: true
                 dropEnabled: true
                 usesPlasmaTheme: true
-                //verticalScrollBarPolicy: Qt.ScrollBarAlwaysOn
+
                 onKeyNavUp: searchField.focus = true
                 Keys.onPressed: {
-                    if (event.key == Qt.Key_Tab) {
+                    if(event.modifiers & Qt.ControlModifier ||event.modifiers & Qt.ShiftModifier){
+                        searchField.focus = true;
+                        return
+                    }
+                    if (event.key === Qt.Key_Tab) {
                         event.accepted = true;
                         searchField.focus = true
                     }
@@ -466,17 +476,17 @@ Item{
 
                 anchors {
                     top: rowSearchField.bottom
-                    topMargin: units.largeSpacing * 2
+                    topMargin: PlasmaCore.Units.largeSpacing * 2
                     left: parent.left
                     right: parent.right
 
                 }
-                width: root.cellSize *  plasmoid.configuration.numberColumns + units.largeSpacing
+                width: root.cellSize *  plasmoid.configuration.numberColumns + PlasmaCore.Units.largeSpacing
                 height: root.cellSize *  plasmoid.configuration.numberRows
 
                 Item {
                     id: mainColumn
-                    width: root.cellSize *  plasmoid.configuration.numberColumns + units.largeSpacing
+                    width: root.cellSize *  plasmoid.configuration.numberColumns + PlasmaCore.Units.largeSpacing
                     height: root.cellSize * plasmoid.configuration.numberRows
 
                     property Item visibleGrid: allAppsGrid
@@ -490,7 +500,7 @@ Item{
                     ItemGridView {
                         id: allAppsGrid
 
-                        width: root.cellSize *  plasmoid.configuration.numberColumns + units.largeSpacing
+                        width: root.cellSize *  plasmoid.configuration.numberColumns + PlasmaCore.Units.largeSpacing
                         height: root.cellSize * plasmoid.configuration.numberRows
 
                         cellWidth:   root.cellSize
@@ -503,7 +513,7 @@ Item{
 
                         onOpacityChanged: {
                             if (opacity == 1) {
-                                allAppsGrid.scrollBar.flickableItem.contentY = 0;
+                                //allAppsGrid.scrollBar.flickableItem.contentY = 0;
                                 mainColumn.visibleGrid = allAppsGrid;
                             }
                         }
@@ -512,10 +522,10 @@ Item{
 
                     ItemMultiGridView {
                         id: runnerGrid
-                        width: root.cellSize *  plasmoid.configuration.numberColumns + units.largeSpacing
+                        width: root.cellSize *  plasmoid.configuration.numberColumns + PlasmaCore.Units.largeSpacing
                         height: root.cellSize * plasmoid.configuration.numberRows
                         z: (opacity == 1.0) ? 1 : 0
-                        aCellWidth: parent.width - units.largeSpacing
+                        aCellWidth: parent.width - PlasmaCore.Units.largeSpacing
                         aCellHeight: root.cellSize
                         enabled: (opacity == 1.0) ? 1 : 0
                         model: runnerModel
@@ -530,23 +540,27 @@ Item{
                     }
 
                     Keys.onPressed: {
-                        if (event.key == Qt.Key_Tab) {
+                        if(event.modifiers & Qt.ControlModifier ||event.modifiers & Qt.ShiftModifier){
+                            searchField.focus = true;
+                            return
+                        }
+                        if (event.key === Qt.Key_Tab) {
                             event.accepted = true;
                             searchField.focus = true
-                        } else if (event.key == Qt.Key_Backspace) {
+                        } else if (event.key === Qt.Key_Backspace) {
                             event.accepted = true;
                             if(root.searching)
                                 searchField.backspace();
                             else
                                 searchField.focus = true
-                        } else if (event.key == Qt.Key_Escape) {
+                        } else if (event.key === Qt.Key_Escape) {
                             event.accepted = true;
                             if(root.searching){
                                 searchField.clear()
                             } else {
                                 root.toggle()
                             }
-                        } else if (event.text != "") {
+                        } else if (event.text !== "") {
                             event.accepted = true;
                             searchField.appendText(event.text);
                         }
@@ -558,7 +572,11 @@ Item{
 
 
             Keys.onPressed: {
-                if (event.key == Qt.Key_Escape) {
+                if(event.modifiers & Qt.ControlModifier ||event.modifiers & Qt.ShiftModifier){
+                    searchField.focus = true;
+                    return
+                }
+                if (event.key === Qt.Key_Escape) {
                     event.accepted = true;
                     if (root.searching) {
                         reset();
@@ -572,10 +590,10 @@ Item{
                     return;
                 }
 
-                if (event.key == Qt.Key_Backspace) {
+                if (event.key === Qt.Key_Backspace) {
                     event.accepted = true;
                     searchField.backspace();
-                }  else if (event.text != "") {
+                }  else if (event.text !== "") {
                     event.accepted = true;
                     searchField.appendText(event.text);
                 }
@@ -583,9 +601,15 @@ Item{
 
         }
 
+        function setModels(){
+            globalFavoritesGrid.model = globalFavorites
+            allAppsGrid.model = rootModel.modelForRow(0);
+        }
+
         Component.onCompleted: {
-            kicker.reset.connect(reset);
+            rootModel.refreshed.connect(setModels)
             reset();
+            rootModel.refresh();
         }
     }
 
@@ -604,7 +628,6 @@ Item{
 
         objectName: "popupWindowIcon"
         //flags: Qt.WindowStaysOnTopHint
-        flags: Qt.WindowStaysOnTopHint
         type: "Notification"
         location: PlasmaCore.Types.Floating
 

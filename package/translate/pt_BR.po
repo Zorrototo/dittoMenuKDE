@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dittomenu\n"
 "Report-Msgid-Bugs-To: https://store.kde.org/p/1312669/\n"
-"POT-Creation-Date: 2023-03-09 16:58+0100\n"
+"POT-Creation-Date: 2023-05-05 16:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,36 +64,12 @@ msgid "Clear Icon"
 msgstr "Resetar Ícone"
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Behavior"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Show applications as:"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Name only"
-msgstr "Nome apenas"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Description only"
-msgstr "Descrição apenas"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Name (Description)"
-msgstr "Nome (Descrição)"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Description (Name)"
-msgstr "Descrição (Nome)"
-
-#: ../contents/ui/ConfigGeneral.qml
 msgid "Show favorites first"
 msgstr "Exbir os Favoritros primeiro"
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Menu position:"
-msgstr "Posição do Menu"
+msgid "Menu position"
+msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Default"
@@ -108,32 +84,16 @@ msgid "Center bottom"
 msgstr "Centro inferior"
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Search"
-msgstr "Pesquisar"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Expand search to bookmarks, files and emails"
-msgstr "Expandir a pesquisa para favoritos, arquivos e e-mails"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Show user icon"
-msgstr "Exibir avatar"
-
-#: ../contents/ui/ConfigGeneral.qml
 msgid "Show labels in two lines"
 msgstr "Exibir os nomes em duas linhas"
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Grid"
-msgstr "Tabela"
+msgid "Number of columns"
+msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Number of columns in grid"
-msgstr "Número de colunas"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Number of rows in grid"
-msgstr "Número de linhas"
+msgid "Number of rows"
+msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Unhide all hidden applications"
@@ -178,6 +138,39 @@ msgstr "Todos os programas"
 #: ../contents/ui/main.qml
 msgid "Edit Applications..."
 msgstr "Editar Programa"
+
+#~ msgid "Name only"
+#~ msgstr "Nome apenas"
+
+#~ msgid "Description only"
+#~ msgstr "Descrição apenas"
+
+#~ msgid "Name (Description)"
+#~ msgstr "Nome (Descrição)"
+
+#~ msgid "Description (Name)"
+#~ msgstr "Descrição (Nome)"
+
+#~ msgid "Menu position:"
+#~ msgstr "Posição do Menu"
+
+#~ msgid "Search"
+#~ msgstr "Pesquisar"
+
+#~ msgid "Expand search to bookmarks, files and emails"
+#~ msgstr "Expandir a pesquisa para favoritos, arquivos e e-mails"
+
+#~ msgid "Show user icon"
+#~ msgstr "Exibir avatar"
+
+#~ msgid "Grid"
+#~ msgstr "Tabela"
+
+#~ msgid "Number of columns in grid"
+#~ msgstr "Número de colunas"
+
+#~ msgid "Number of rows in grid"
+#~ msgstr "Número de linhas"
 
 #~ msgid "System Preferences"
 #~ msgstr "Configurações do Sistema"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dittomenu\n"
 "Report-Msgid-Bugs-To: https://store.kde.org/p/1312669/\n"
-"POT-Creation-Date: 2023-03-09 16:58+0100\n"
+"POT-Creation-Date: 2023-05-05 16:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,35 +64,11 @@ msgid "Clear Icon"
 msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Behavior"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Show applications as:"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Name only"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Description only"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Name (Description)"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Description (Name)"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
 msgid "Show favorites first"
 msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Menu position:"
+msgid "Menu position"
 msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
@@ -108,31 +84,15 @@ msgid "Center bottom"
 msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Search"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Expand search to bookmarks, files and emails"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Show user icon"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
 msgid "Show labels in two lines"
 msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Grid"
+msgid "Number of columns"
 msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Number of columns in grid"
-msgstr ""
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Number of rows in grid"
+msgid "Number of rows"
 msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml

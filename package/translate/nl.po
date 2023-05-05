@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dittomenu\n"
 "Report-Msgid-Bugs-To: https://store.kde.org/p/1312669/\n"
-"POT-Creation-Date: 2023-03-09 16:58+0100\n"
+"POT-Creation-Date: 2023-05-05 16:47+0200\n"
 "PO-Revision-Date: 2022-01-01 20:09+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
@@ -65,36 +65,12 @@ msgid "Clear Icon"
 msgstr "Pictogram verwijderen"
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Behavior"
-msgstr "Gedrag"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Show applications as:"
-msgstr "Programmaweergave:"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Name only"
-msgstr "Alleen naam"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Description only"
-msgstr "Alleen beschrijving"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Name (Description)"
-msgstr "Naam (beschrijving)"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Description (Name)"
-msgstr "Beschrijving (naam)"
-
-#: ../contents/ui/ConfigGeneral.qml
 msgid "Show favorites first"
 msgstr "Favorieten bovenaan tonen"
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Menu position:"
-msgstr "Menupositie:"
+msgid "Menu position"
+msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Default"
@@ -109,32 +85,16 @@ msgid "Center bottom"
 msgstr "Gecentreerd (onderaan)"
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Search"
-msgstr "Zoeken"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Expand search to bookmarks, files and emails"
-msgstr "Ook bladwijzers, bestanden en e-mails doorzoeken"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Show user icon"
-msgstr "Gebruikersafbeelding tonen"
-
-#: ../contents/ui/ConfigGeneral.qml
 msgid "Show labels in two lines"
 msgstr "Labeltekst verdelen over twee regels"
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Grid"
-msgstr "Rooster"
+msgid "Number of columns"
+msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
-msgid "Number of columns in grid"
-msgstr "Aantal kolommen op rooster"
-
-#: ../contents/ui/ConfigGeneral.qml
-msgid "Number of rows in grid"
-msgstr "Aantal rijen op rooster"
+msgid "Number of rows"
+msgstr ""
 
 #: ../contents/ui/ConfigGeneral.qml
 msgid "Unhide all hidden applications"
@@ -179,6 +139,45 @@ msgstr ""
 #: ../contents/ui/main.qml
 msgid "Edit Applications..."
 msgstr "Programma's bewerken…"
+
+#~ msgid "Behavior"
+#~ msgstr "Gedrag"
+
+#~ msgid "Show applications as:"
+#~ msgstr "Programmaweergave:"
+
+#~ msgid "Name only"
+#~ msgstr "Alleen naam"
+
+#~ msgid "Description only"
+#~ msgstr "Alleen beschrijving"
+
+#~ msgid "Name (Description)"
+#~ msgstr "Naam (beschrijving)"
+
+#~ msgid "Description (Name)"
+#~ msgstr "Beschrijving (naam)"
+
+#~ msgid "Menu position:"
+#~ msgstr "Menupositie:"
+
+#~ msgid "Search"
+#~ msgstr "Zoeken"
+
+#~ msgid "Expand search to bookmarks, files and emails"
+#~ msgstr "Ook bladwijzers, bestanden en e-mails doorzoeken"
+
+#~ msgid "Show user icon"
+#~ msgstr "Gebruikersafbeelding tonen"
+
+#~ msgid "Grid"
+#~ msgstr "Rooster"
+
+#~ msgid "Number of columns in grid"
+#~ msgstr "Aantal kolommen op rooster"
+
+#~ msgid "Number of rows in grid"
+#~ msgstr "Aantal rijen op rooster"
 
 #~ msgid "System Preferences"
 #~ msgstr "Systeeminstellingen"
