@@ -82,7 +82,7 @@ Item {
                 topMargin: PlasmaCore.Units.smallSpacing
                 horizontalCenter: parent.horizontalCenter
             }
-            maximumLineCount: plasmoid.configuration.labels2lines ? 2 : 2 // force two lines
+            maximumLineCount: plasmoid.configuration.labels2lines ? 2 : 1
             horizontalAlignment: Text.AlignHCenter
             width: parent.width - PlasmaCore.Units.largeSpacing
             height: PlasmaCore.Units.gridUnit * 2
