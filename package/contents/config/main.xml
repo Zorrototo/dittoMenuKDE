@@ -7,13 +7,13 @@
 
   <group name="General">
     <entry name="displayPosition" type="Enum">
-    <label>Position.</label>
-    <choices name="Settings::displayPosition">
-      <choice name="Default" />
-      <choice name="Center" />
-      <choice name="CenterBottom" />
-    </choices>
-    <default>Default</default>
+      <label>Position.</label>
+      <choices name="Settings::displayPosition">
+        <choice name="Default"/>
+        <choice name="Center"/>
+        <choice name="CenterBottom"/>
+      </choices>
+      <default>Default</default>
     </entry>
 
     <entry name="icon" type="String">

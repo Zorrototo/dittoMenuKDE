@@ -125,7 +125,7 @@ msgstr "Extinction"
 
 #: ../contents/ui/MenuRepresentation.qml
 msgid "Type here to search ..."
-msgstr "Ecrire ici pour rechercher ..."
+msgstr "Rechercher ..."
 
 #: ../contents/ui/MenuRepresentation.qml
 msgid "Favorites"
@@ -133,7 +133,7 @@ msgstr "Favoris"
 
 #: ../contents/ui/MenuRepresentation.qml
 msgid "All apps"
-msgstr "Toutes les apps"
+msgstr "Toutes les applications"
 
 #: ../contents/ui/main.qml
 msgid "Edit Applications..."
