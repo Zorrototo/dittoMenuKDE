@@ -9,9 +9,9 @@
     <entry name="displayPosition" type="Enum">
       <label>Position.</label>
       <choices name="Settings::displayPosition">
-        <choice name="Default"/>
-        <choice name="Center"/>
-        <choice name="CenterBottom"/>
+        <choice name="Default" />
+        <choice name="Center" />
+        <choice name="CenterBottom" />
       </choices>
       <default>Default</default>
     </entry>
