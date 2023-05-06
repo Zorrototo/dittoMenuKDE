@@ -6,7 +6,6 @@ ___
 ## Modifications done for my preferences and own use on Manjaro
 
 - changed some default settings (favorites is the default panel, user and avatar now hidden, default position on bottom left)
-- forced labels to be on two lines (the `labels2lines` parameter doesn't seem to work)
 - added and modified action buttons to update the system, log out, sleep, reboot, shutdown
 - increased icons size
 - added French translation and updated other with new modifications
