@@ -10,7 +10,7 @@ ___
 - increased icons size
 - added French translation and updated other with new modifications
 
-![Screenshot_20230311_184155](https://user-images.githubusercontent.com/17416415/224503592-1aa96f78-b0f3-46c0-af1b-110a74adbd74.png)
+![Screenshot_20230509_230208](https://github.com/Zorrototo/dittoMenuKDE/blob/main/Screenshot_20230509_230208.png?raw=true)
 
 ___
 
